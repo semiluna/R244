@@ -3,8 +3,8 @@ import torch.nn as nn
 import torch.optim as optim
 import pytorch_lightning as pl
 
-from pyg_gnn import pyg_GNNModel
-from dgl_gnn import GAT as dgl_GNNModel
+from models.pyg_gnn import pyg_GNNModel
+from models.dgl_gnn import GAT as dgl_GNNModel
 
 
 class pyg_NodeLevelGNN(pl.LightningModule):

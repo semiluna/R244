@@ -17,7 +17,7 @@ import pytorch_lightning as pl
 from pytorch_lightning.callbacks import ModelCheckpoint
 from torch import Tensor
 
-from gnn_trainer import pyg_NodeLevelGNN, dgl_NodeLevelGNN
+from models.gnn_trainer import pyg_NodeLevelGNN, dgl_NodeLevelGNN
 
 CHECKPOINT_PATH = os.environ.get("PATH_CHECKPOINT", "saved_models/pytorch/")
 AVAIL_GPUS = min(1, torch.cuda.device_count())
